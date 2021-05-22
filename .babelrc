@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread"
+  ],
+  "presets": [
+    "env",
+    "react",
+    "stage-2"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "airbnb",
+        "power-assert"
+      ]
+    }
+  }
+}

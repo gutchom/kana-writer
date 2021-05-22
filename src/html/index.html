@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kana writer</title>
+  <link rel="stylesheet" href="//use.fontawesome.com/323482d85f.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <blockquote cite="http://www.aozora.gr.jp/cards/000148/files/789_14547.html">
+    吾輩は猫である。名前はまだ無い。<br>
+    どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。<br>
+    この書生の掌の裏でしばらくはよい心持に坐っておったが、しばらくすると非常な速力で運転し始めた。書生が動くのか自分だけが動くのか分らないが無暗に眼が廻る。胸が悪くなる。到底助からないと思っていると、どさりと音がして眼から火が出た。それまでは記憶しているがあとは何の事やらいくら考え出そうとしても分らない。<br>
+    ふと気が付いて見ると書生はいない。たくさんおった兄弟が一疋も見えぬ。肝心の母親さえ姿を隠してしまった。その上今までの所とは違って無暗に明るい。眼を明いていられぬくらいだ。はてな何でも容子がおかしいと、のそのそ這い出して見ると非常に痛い。吾輩は藁の上から急に笹原の中へ棄てられたのである。<br>
+  </blockquote>
+  <form name="source" id="writing">
+    <textarea name="text" cols="48" rows="32">
+
+    </textarea>
+    <br>
+    <button name="convert">
+      <span lang="en">Start</span>
+      <span lang="ja">開始</span>
+    </button>
+    <button name="resume" hidden>
+      <span lang="en">Resume</span>
+      <span lang="ja">再開</span>
+    </button>
+  </form>
+
+  <form name="writer"></form>
+
+  <aside class="option">
+    <section class="menu config">
+      <i title="config" class="icon fa fa-cog"></i>
+      <form class="config" name="config">
+        <fieldset>
+          <legend>
+            <span lang="en">Copy format</span>
+            <span lang="ja">コピー形式</span>
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="selection" value="body">
+                <span lang="en">avoid kana</span>
+                <span lang="ja">本文のみ</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="selection" value="kana">
+                <span lang="en">kana first</span>
+                <span lang="ja">ふりがな優先</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="selection" value="html">
+                <span>HTML</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <span lang="en">Language</span>
+            <span lang="ja">表示言語</span>
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="language" value="en">
+                <span>English</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="language" value="ja">
+                <span>日本語</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+  </aside>
+
+  <script type="application/javascript" src="./js/app.js"></script>
+</body>
+</html>
